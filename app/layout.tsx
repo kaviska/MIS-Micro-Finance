@@ -25,7 +25,7 @@ const demoTheme = createTheme({
   },
 });
 const posRedirecter = () => {
-  window.location.href = "/pos";
+  // window.location.href = "/pos";
 }
 
 
@@ -84,12 +84,10 @@ function TopNav() {
             color="error" // Red color for logout icon
         />
       
-      <button onClick={posRedirecter} className="md:rounded-[20px] cursor-pointer md:border md:border-[#53B175] md:x-6 md:py-3 md:w-[80px]">
-        POS
-      </button>
+      
       <div className="md:flex hidden items-center gap-3 ">
         <img
-          src="/user.webp"
+          src="/user.jpeg"
           alt="user-image"
           className="rounded-full w-[40px] h-[40px]"
         />
@@ -133,8 +131,8 @@ export default function RootLayout({
       <NextAppProvider
         navigation={NAVIGATION as any} // Temporarily cast to 'any' if type mismatch persists
         branding={{
-          logo: <img src="/logo.png" alt="MUI logo" className="md:block hidden" />,
-          title: "IYMart",
+          logo: <img src="/logo2.jpeg" alt="SparkGrow logo" className="md:block hidden h-8" />,
+          title: "SparkGrow",
           homeUrl: "/dashboard",
         }}
         theme={demoTheme}

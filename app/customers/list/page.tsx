@@ -1,6 +1,6 @@
 "use client";
 import DataTableMy from "@/app/components/DataTable";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import UpdateIcon from "@mui/icons-material/Update";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
@@ -240,7 +240,7 @@ export default function ViewCustomers() {
               Total Customers: <span className="font-semibold">{customers.length}</span>
             </p>
             <button
-              onClick={() => window.location.href = '/cutomers/add'}
+              onClick={() => window.location.href = '/customers/add'}
               className="px-4 py-2 bg-[#53B175] text-white rounded-md hover:bg-[#449d63] transition-colors"
             >
               Add New Customer
